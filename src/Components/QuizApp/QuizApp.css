@@ -1,0 +1,133 @@
+.container {
+    height: calc(100vh - 100px);
+    padding: 2vw 5vw;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px,
+        rgba(0, 0, 0, 0.05) 0px 1px 2px;
+    border-radius: 16px;
+    background: #ffffff;
+}
+
+.questions_Numbers {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+.questions_Numbers h1 {
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.questions_Numbers p {
+    opacity: .7;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.questions {
+    /* border: 1px solid black; */
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: justify;
+    margin-top: 4rem;
+    letter-spacing: 1px;
+}
+
+.options_button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2.5rem;
+    margin-top: 4rem;
+
+}
+
+.options_button ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    list-style: none;
+}
+
+.options_button ul li {
+    padding: 6px 12px;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 250px;
+    text-align: center;
+    box-shadow: 4px 4px 12px gray;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options_button ul li:hover {
+    background-color: black;
+    color: #fff;
+    transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+
+.submit_container {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.submit_container h2 {
+    letter-spacing: 1px;
+}
+
+.score_container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 80%;
+
+}
+
+.score_container .score {
+    display: flex;
+    justify-content: space-between;
+}
+
+.score_container .score_bar {
+    width: 100%;
+    height: 34px;
+    border-radius: 8px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 12px gray;
+    margin-top: 0.5rem;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.score_container .score_bar .progress {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background-color: #030501;
+    left: -100%;
+    top: 0%;
+}
+
+.Correct {
+    background: #85bd46;
+    border-color: #030501;
+    color: #fff;
+}
+
+.Wrong {
+    background: #979994;
+    border-color: #030501;
+    color: #fff;
+}

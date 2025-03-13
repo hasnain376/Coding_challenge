@@ -1,0 +1,17 @@
+button{
+    padding: 6px 12px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 250px;
+    box-shadow: 4px 4px 12px  gray;
+    border: none;
+}
+
+button:hover{
+    background-color: black;
+    color: #fff;
+    transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
